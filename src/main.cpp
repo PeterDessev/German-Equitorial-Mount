@@ -13,7 +13,7 @@
 #define USART_BAUDRATE 9600
 #define UBRR_VALUE (((16000000 / (USART_BAUDRATE * 16UL))) - 1)
 
-#define MICROSTEPS 64
+#define MICROSTEPS 32
 #define CURRENT 2000
 #define EN_PIN 7            // Enable
 #define DIR_PIN 3           // Direction
@@ -30,8 +30,8 @@
 
 #define DIR 0
 
-#define TRACKDELMS 1
-#define TRACKDELUS 140
+#define TRACKDELMS 3
+#define TRACKDELUS 70
 #define FASTDELUS 8
 #define JUMP 1
 #define STRIDE 1000

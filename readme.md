@@ -8,7 +8,7 @@ The main driver of the GEM is a TMC2209 configured over UART. The [TMCStepper li
 
 ## Building
 
-Bulding has been tested on Arch linux. In order to build run
+Bulding has been tested on Arch linux. In order to build first modify `ARDUINO_AVR_DIRECTORY` in `CMakeLists.txt` to the path of the `avr` folder in an Arduino installation. Then run:
 
 ```bash
 bash quickUpload.sh PORT
@@ -25,3 +25,4 @@ Both continual development of the driver and houskeeping tasks are planned for t
  - [x] Migrate to a real build system
  - [ ] Move from Atmega to STM32
  - [ ] Clean project repo
+ - [ ] Remove Arduino dependancy

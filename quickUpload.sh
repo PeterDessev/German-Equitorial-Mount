@@ -15,4 +15,4 @@ cmake ..
 
 make
 
-avrdude -q -v -p atmega328p -c arduino -P /dev/ttyUSB0 -b 115200 -D -U flash:w:GermanEquitorialMount-atmega328p.hex:i
+avrdude -q -v -p atmega328p -c arduino -P $PORT -b 115200 -D -U flash:w:GermanEquitorialMount-atmega328p.hex:i
