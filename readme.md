@@ -26,6 +26,6 @@ Both continual development of the driver and houskeeping tasks are planned for t
 
  - [ ] Release electronics schematic
  - [ ] Release CAD files
- - [ ] Migrate to a real build system
+ - [x] Migrate to a real build system
  - [ ] Move from Atmega to STM32
  - [ ] Clean project repo

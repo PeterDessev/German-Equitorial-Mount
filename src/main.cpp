@@ -188,7 +188,7 @@ void pwm_autoscale(uint8_t B){
 
 // Quickly moves the motor. The motor is stepped with a 
 // delay equal to twice delay_ms.
-void fastMove(int delay_us) {
+inline void fastMove(const int delay_us) {
     STEP_PORT |= _BV(STEP_PIN);
     _delay_us(delay_us);
     STEP_PORT &= ~_BV(STEP_PIN);

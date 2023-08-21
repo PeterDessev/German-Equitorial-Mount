@@ -1,0 +1,36 @@
+SoftwareSerial.cpp.o: \
+ Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src/SoftwareSerial.cpp \
+ Arduino/hardware/tools/avr/avr/include/avr/interrupt.h \
+ Arduino/hardware/tools/avr/avr/include/avr/io.h \
+ Arduino/hardware/tools/avr/avr/include/avr/sfr_defs.h \
+ Arduino/hardware/tools/avr/avr/include/inttypes.h \
+ Arduino/hardware/tools/avr/avr/include/stdint.h \
+ Arduino/hardware/tools/avr/avr/include/avr/iom328p.h \
+ Arduino/hardware/tools/avr/avr/include/avr/portpins.h \
+ Arduino/hardware/tools/avr/avr/include/avr/common.h \
+ Arduino/hardware/tools/avr/avr/include/avr/version.h \
+ Arduino/hardware/tools/avr/avr/include/avr/fuse.h \
+ Arduino/hardware/tools/avr/avr/include/avr/lock.h \
+ Arduino/hardware/tools/avr/avr/include/avr/pgmspace.h \
+ Arduino/hardware/arduino/avr/cores/arduino/Arduino.h \
+ Arduino/hardware/tools/avr/avr/include/stdlib.h \
+ Arduino/hardware/tools/avr/avr/include/string.h \
+ Arduino/hardware/tools/avr/avr/include/math.h \
+ Arduino/hardware/arduino/avr/cores/arduino/binary.h \
+ Arduino/hardware/arduino/avr/cores/arduino/WCharacter.h \
+ Arduino/hardware/tools/avr/avr/include/ctype.h \
+ Arduino/hardware/arduino/avr/cores/arduino/WString.h \
+ Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h \
+ Arduino/hardware/arduino/avr/cores/arduino/Stream.h \
+ Arduino/hardware/arduino/avr/cores/arduino/Print.h \
+ Arduino/hardware/tools/avr/avr/include/stdio.h \
+ Arduino/hardware/arduino/avr/cores/arduino/Printable.h \
+ Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h \
+ Arduino/hardware/tools/avr/avr/include/avr/eeprom.h \
+ Arduino/hardware/tools/avr/avr/include/util/delay.h \
+ Arduino/hardware/tools/avr/avr/include/util/delay_basic.h \
+ Arduino/hardware/arduino/avr/cores/arduino/Arduino.h \
+ Arduino/hardware/arduino/avr/variants/eightanaloginputs/pins_arduino.h \
+ Arduino/hardware/arduino/avr/variants/eightanaloginputs/../standard/pins_arduino.h \
+ Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src/SoftwareSerial.h \
+ Arduino/hardware/arduino/avr/cores/arduino/Stream.h

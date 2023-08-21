@@ -4,9 +4,4 @@ Arduino/
 .stfolder/
 *.txt
 
-
-*.a
-*.d
-*.o
-*.elf
-*.hex
+build/
