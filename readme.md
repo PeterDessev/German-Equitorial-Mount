@@ -1,6 +1,6 @@
 # GEM Driver
 
-A quick and dirty firmware for driving a german equitorial mount currently under development. A schematic for the electronics and publishing of .step files for the rest of the design are under way.
+A quick and dirty firmware for driving a german equitorial mount currently under development. A schematic for the electronics and publishing of .step files for the rest of the design are under way. The project is based on the Arduino Nano.
 
 ## TMC Stepper
 
@@ -8,17 +8,13 @@ The main driver of the GEM is a TMC2209 configured over UART. The [TMCStepper li
 
 ## Building
 
-At the current moment building is a rather tricky endevour which requires a lot of platform specific instructions and even more luck. If you want hints to build this for yourself (for whatever reason), bellow is a ___very___ loose set of instructions to help guide you.
+Bulding has been tested on Arch linux. In order to build run
 
-1. Download the OLD (Version 1.x) Arduino IDE
-2. Enable verbose output and build a sketch including the software serial header
-3. Copy the SoftwareSerial and core (core can be named several things but usually contains the word core) object files to ./bin
-4. Copy the Arduino folder, the one which is included in most compilations in the IDE, from the IDE output to the project root. 
-4. Run quickBuild.sh or .bash
+```bash
+bash quickUpload.sh PORT
+```
 
-At the current moment, before a proper build system is implemented, I cannot recomend anyone try to build this. Please be patient, I am working on the problem as fast as I can.
-
-While a .bat file is included, I haven't tested it on Windows with the current way things are so Windows users are on their own.  
+Where PORT is the arudino's UART port.
 
 ## Next Steps
 
