@@ -1,0 +1,12 @@
+TMCStepper/
+Arduino/
+.vscode/
+.stfolder/
+*.txt
+
+
+*.a
+*.d
+*.o
+*.elf
+*.hex
