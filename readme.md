@@ -27,9 +27,9 @@ Where PORT is the arudino's UART port.
 
 Both continual development of the driver and houskeeping tasks are planned for this project. Here are some of the major tasks I am planning to do, in no particular order:
 
- - [ ] Release electronics schematic
+ - [x] Release electronics schematic
  - [ ] Release CAD files
  - [x] Migrate to a real build system
  - [ ] Move from Atmega to STM32
- - [ ] Clean project repo
+ - [x] Clean project repo
  - [ ] Remove Arduino dependancy
