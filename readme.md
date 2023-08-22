@@ -23,13 +23,18 @@ bash quickUpload.sh PORT
 
 Where PORT is the arudino's UART port.
 
+# Schematic
+
+The schematic was made and can be edited using (KiCad)[https://www.kicad.org/]. A PCB does not exist yet but is in the works
+
 ## Next Steps
 
 Both continual development of the driver and houskeeping tasks are planned for this project. Here are some of the major tasks I am planning to do, in no particular order:
 
- - [x] Release electronics schematic
  - [ ] Release CAD files
- - [x] Migrate to a real build system
  - [ ] Move from Atmega to STM32
- - [x] Clean project repo
  - [ ] Remove Arduino dependancy
+ - [ ] Create PCB
+ - [x] Release electronics schematic
+ - [x] Clean project repo
+ - [x] Migrate to a real build system
