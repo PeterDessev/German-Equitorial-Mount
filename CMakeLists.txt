@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 set(CMAKE_TOOLCHAIN_FILE "cmake-avr-toolchain/avr-gcc.toolchain.cmake")
 
-set(ARDUINO_AVR_DIRECTORY "/usr/share/arduino/hardware/archlinux-arduino/avr")
+set(ARDUINO_AVR_DIRECTORY "/c/Program\ Files\ (x86)/Arduino/hardware/arduino/avr")
 
 project(GermanEquitorialMount C CXX ASM)
 

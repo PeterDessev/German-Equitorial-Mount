@@ -1,7 +1,37 @@
-TMCStepper/
-Arduino/
+# Build ouptut
+build/
+
+# Kicad (src: https://github.com/github/gitignore/blob/main/KiCad.gitignore)
+# Temporary files
+Schematic/*.000
+Schematic/*.bak
+Schematic/*.bck
+Schematic/*.kicad_pcb-bak
+Schematic/*.kicad_sch-bak
+Schematic/*-backups
+Schematic/*.kicad_prl
+Schematic/*.sch-bak
+Schematic/*~
+Schematic/_autosave-*
+Schematic/*.tmp
+Schematic/*-save.pro
+Schematic/*-save.kicad_pcb
+Schematic/fp-info-cache
+
+# Netlist files (exported from Eeschema)
+Schematic/*.net
+
+# Autorouter files (exported from Pcbnew)
+Schematic/*.dsn
+Schematic/*.ses
+
+# Exported BOM files
+Schematic/*.xml
+Schematic/*.csv
+
+Schematic/\~*
+
+# Misc
 .vscode/
 .stfolder/
 *.ignore
-
-build/
