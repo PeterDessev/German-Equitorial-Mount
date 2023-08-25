@@ -1,3 +1,4 @@
+
 [submodule "cmake-avr-toolchain"]
 	path = cmake-avr-toolchain
 	url = https://github.com/peterdessev/cmake-avr-toolchain
