@@ -1,4 +1,3 @@
-// #include <HardwareSerial.h>
 #include <avr/interrupt.h>
 #include <avr/io.h>
 #include <util/delay.h>
@@ -42,7 +41,7 @@ extern inline void fastMove() {
 
 int main() {
     usartInit(BAUDRATE);
-    usartPrintf("This is %d %s", 1, "message\n");
+
     // Clear DDRD and set all pins to input
     DDRD = 0;
 
@@ -58,9 +57,6 @@ int main() {
 
     PORTD |= _BV(3); // Set Dir pin to high
 
-    // Internal LED
-    DDRB |= _BV(5);
-
     // // Set Software Serial pins to output
     DDRD |= _BV(5);
     DDRD |= _BV(6);
@@ -69,16 +65,10 @@ int main() {
     PORTD |= _BV(EN_PIN); // Set enable to high
     _delay_ms(2000);
     PORTD &= ~_BV(EN_PIN); // Set enable to low
+
     softwareUart* raDriverUart = initSoftUart(&DDRD, &PORTD, 5, &DDRD, &PIND, 6);
     tmc2209* raDriver = createDriver(0.11f, 0, raDriverUart);
     
-    softUartPrintc(raDriverUart, 'a');
-    while(1){
-        uint8_t res = softUartGetc(raDriverUart);
-        softUartPrintc(raDriverUart, res);
-        _delay_ms(10);
-    }
-
     toff(raDriver, 5);
     rms_current(raDriver, CURRENT); // Set motor RMS current
     microsteps(raDriver, MICROSTEPS);
