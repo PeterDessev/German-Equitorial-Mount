@@ -25,7 +25,7 @@ Where PORT is the arudino's UART port. On linux this is usually `/dev/ttyUSB#`, 
 
 # Schematic
 
-The schematic was made and can be edited using (KiCad)[https://www.kicad.org/]. A PCB does not exist yet but is in the works
+The schematic was made and can be edited using [KiCad](https://www.kicad.org/). A PCB does not exist yet but is in the works
 
 ## Next Steps
 
