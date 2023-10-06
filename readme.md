@@ -1,27 +1,27 @@
 # GEM Driver
 
-A quick and dirty firmware for driving a german equitorial mount currently under development. A schematic for the electronics and publishing of .step files for the rest of the design are under way. The project is based on the Arduino Nano.
+A work in progress firmware for driving a german equitorial mount currently under development. A schematic for the electronics and publishing of .step files for the rest of the design are under way. The project is based on the Arduino Nano, but will be migrated to the STM32 in the future.
 
 ## TMC Stepper
 
-The main driver of the GEM is a TMC2209 configured over UART. The [TMCStepper library](https://github.com/teemuatlut/TMCStepper/tree/master) was used in the development of the driver, however was stripped down and modified to be more compatable with pure AVR-C, and less reliant on Arduino and their IDE. In the future, I would like to completely remove all traces of the Arduino Library to simplify building and development.
+The main driver of the GEM is a TMC2209 configured over UART. The [TMCStepper library](https://github.com/teemuatlut/TMCStepper/tree/master) was used in the development of the driver, however was stripped down and modified to be more compatable with pure AVR-C.
 
 ## Building
 
-Before building initialize and update git submodules, if not already done, with
+Before building initialize and update git submodules, if not already done, with the following.
 
 ```zsh
 git submodule init
 git submodule update
 ```
 
-Bulding has been tested on Arch linux. In order to build first modify `ARDUINO_AVR_DIRECTORY` in `CMakeLists.txt` to the path of the `avr` folder in an Arduino installation. Then run:
+Bulding has been tested on Arch linux. To build, run the following.
 
 ```zsh
 bash quickUpload.sh PORT
 ```
 
-Where PORT is the arudino's UART port.
+Where PORT is the arudino's UART port. On linux this is usually `/dev/ttyUSB#`, on windows `com#`.
 
 # Schematic
 
@@ -33,8 +33,8 @@ Both continual development of the driver and houskeeping tasks are planned for t
 
  - [ ] Release CAD files
  - [ ] Move from Atmega to STM32
- - [ ] Remove Arduino dependancy
  - [ ] Create PCB
+ - [x] Remove Arduino dependancy
  - [x] Release electronics schematic
  - [x] Clean project repo
  - [x] Migrate to a real build system
