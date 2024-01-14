@@ -852,7 +852,7 @@
     (pin "1" (uuid fed1d6ae-9299-413c-9ca4-ada9def176bf))
     (pin "10" (uuid 044dda0c-18f4-4daf-8b76-fe51822d83d6))
     (pin "12" (uuid 15f86fe0-59fe-48ba-a394-a52f7a7667aa))
-    (pin "13" (uuid 69b440a3-bbf6-4afd-af46-a84a07ed915a))
+    (pin "13" (uuid 0e395802-f791-472e-8925-891bdf1b7a99))
     (pin "13" (uuid 0e395802-f791-472e-8925-891bdf1b7a99))
     (pin "14" (uuid b03d0c53-68e6-448e-ba1b-021ed7530ed1))
     (pin "15" (uuid e64e77df-8ff1-4c02-aec3-5086a414dd2a))
